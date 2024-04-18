@@ -41,7 +41,7 @@ router.get('/createWallet', async (req, res, next) => {
 });
 
 router.post('/registerName', async (req, res, next) => {
-    return res.status(200).json({ $id:'dhj' })
+    // return res.status(200).json({ $id:'dhj' })
     try {
         const {mnemonic, userName} = req.body
         const clientOpts = {
