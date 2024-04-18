@@ -34,7 +34,7 @@ router.post('/',authMiddleware, async (req, res, next) => {
       if (file.name !== fileName) {
         fileName = Buffer.from(file.name, 'latin1').toString('utf8');
       }
-      const filePath = `../server/uploads/${fileName}`;
+      const filePath = `./uploads/${fileName}`;
 
       file.mv(filePath, async (err) => {
         if (err) {
