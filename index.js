@@ -26,11 +26,11 @@ const limiter = require('./middlewares/rateLimiter');
     Initializing express server
 */
 // Config
-// if (process.env.NODE_ENV !== "PRODUCTION") {
-//   require('dotenv').config();
+if (process.env.NODE_ENV !== "PRODUCTION") {
+  require('dotenv').config();
   
-//     // require("dotenv").config({ path: "server/config/.env" });
-//   }
+    // require("dotenv").config({ path: "server/config/.env" });
+  }
 const app = express();
 // app.use(cookieParser());
 app.use(
@@ -76,6 +76,7 @@ app.use('/api/dash', Dash);
 app.use(User);
 app.use(Auth);
 // Config
+
 // app.use('*', (req, res, next) => {
 //   next(new AppError('could not find that route', 404));
 // });
