@@ -18,7 +18,7 @@
     "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "dash": "^4.0.0-dev.10",
+    "dash": "^3.25.22",
     "dotenv": "^16.0.1",
     "express": "^4.19.2",
     "express-fileupload": "^1.4.0",
