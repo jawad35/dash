@@ -20,7 +20,6 @@ const Auth = require('./routes/auth');
 const Download = require('./routes/download');
 const Upload = require('./routes/upload');
 const Dash = require('./routes/dash');
-const limiter = require('./middlewares/rateLimiter');
 
 /*
     Initializing express server
