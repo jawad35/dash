@@ -43,7 +43,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(fileUpload());
-app.use(limiter);
+// app.use(limiter);
 app.use('/uploads', express.static('uploads'));
 // app.use(express.static(path.join(__dirname, "./uploads/")));
 
